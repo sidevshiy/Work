@@ -1,0 +1,113 @@
+@media screen and (max-width: 1200px) {
+  
+}
+
+@media screen and (max-width: 993px) {
+
+  .main-section {
+    width: 100%;
+  }
+
+  .countainer {
+    width: 90%;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+  
+  .form-wrapper {
+    flex-direction: column;
+  }
+
+  .form-wrapper div {
+    width: 100%;
+  }
+
+  .streets {
+    flex-direction: column;
+  }
+
+  .first-street,
+  .second-street {
+  width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+a {
+    box-sizing: border-box;
+  }
+
+.wrapper {
+  display: none;
+
+}
+
+.main-btn {
+  display: none;
+}
+
+.note {
+  color: #8288a2;
+  background: #fff;
+  text-decoration: none;
+  width: 91px;
+  position: relative;
+  padding: 19px 59px 19px 32px;
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  cursor: pointer;
+  border: 1px solid #dadef0;
+  }
+
+  .right {
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 32px;   
+  width: 2px;
+  height: 12px;
+  border-top: 0;
+  border-left: 0;
+  background: #8288a2;
+  transform: rotate(45deg);
+  transition: all 1s ease;
+  }
+
+  .left {
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 40px;  
+  width: 2px;
+  height: 12px;
+  border-top: 0;
+  border-left: 0;
+  background: #8288a2;
+  transform: rotate(-45deg);
+  transition: all 1s ease;
+  }
+  
+.note:hover {
+    color: #212bff;
+  }
+
+  .right:hover {
+    background: #212bff;
+  }
+
+  .left:hover {
+    background: #212bff;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/normalise.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=cyrillic" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<section class="main-section">
+		<div class="countainer">
+			<h1 class="title">Выберите способ доставки</h1>
+			<a href="#" class="main-btn delivery activeted">Доставка</a>
+			<a href="#" class="main-btn pickup">Самовывоз</a>
+			<a href="#" class="note">Доставка<span class="right"></span><span class="left"></span></a>
+			<div class="wrapper first-tb">
+				<form action="post" class="form">
+					<div class="form-wrapper">
+						<div class="name">
+							<label for="name">ФИО</label>
+							<input type="text" placeholder="только кириллица" id="name" required>
+						</div>
+						<div class="phone">
+							<label for="phone">Телефон</label>
+							<input type="tel" placeholder="+7 (___) ___-__-__" id="phone" required pattern="(\+?\d[- .]*){7,13}">
+						</div>
+					</div>
+					
+						<label for="address">Адрес доставки</label>
+						<input type="text" id="address" required placeholder="Город, улица, дом">
+						<label for="comment">Комментарий</label>
+						<textarea id="comment" cols="30" rows="10"></textarea>
+						<button type="submit" class="btn">Отправить</button>
+				</div>
+				</form>
+				<a href="#" class="note">Самовывоз<span class="right"></span><span class="left"></a>
+				<div class="wrapper sec-tb">
+					<form action="post">
+						<div class="streets">
+							<div class="first-street">
+								<input type="radio" id="r1" name="input">
+								<label for="r1">Пункт Выдачи заказов Песчаная улица, дом 13 </label>
+							</div>
+							<div class="second-street">
+								<input type="radio" id="r2" name="input">
+								<label for="r2">Пункт Выдачи заказов Подсосенский переулок, 11</label>
+							</div>
+						</div>
+						<div style="max-width: 100%">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3237aeee6eeb9b5391159ea6ea9532e94ab45e6713da6b56b73e7b0bf7c41c76&amp;width=100%&amp;height=546&amp;lang=ru_RU&amp;scroll=true"></script>
+						<button type="submit" class="btn map-btn">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="js/main.js"></script>
+</body>
+</html>
